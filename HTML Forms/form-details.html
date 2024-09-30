@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> HTML Form Dummy</legend>
+
+            <label for="datepicker">Choose Date:</label>
+            <input type="date" id="datepicker">
+
+        <br>
+        <br>
+
+        <label for="selector1">Choose your Dish:</label>
+        <select name="dishes" id="selector1">
+            <option value="maggi">Maggi</option>
+            <option value="kurkure">Kurkure</option>
+            <option value="chips">Chips</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="selector2">Choose your Dish (multiple selection):</label>
+        <select name="dishes[]" id="selector2" multiple>
+            <option value="maggi">Maggi</option>
+            <option value="kurkure">Kurkure</option>
+            <option value="chips">Chips</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Choose your Dish (single selection with radio buttons):</label>
+        <br>
+        <input type="radio" name="dishes_single" id="maggi_radio" value="maggi">
+        <label for="maggi_radio">Maggi</label>
+        <br>
+        <input type="radio" name="dishes_single" id="kurkure_radio" value="kurkure">
+        <label for="kurkure_radio">Kurkure</label>
+        <br>
+        <input type="radio" name="dishes_single" id="chips_radio" value="chips">
+        <label for="chips_radio">Chips</label>
+        <br>
+
+        <br>
+        <br>
+
+        <label>Choose your Dishes (with checkboxes):</label>
+        <br>
+        <input type="checkbox" name="dishes_check[]" id="maggi_checkbox" value="maggi">
+        <label for="maggi_checkbox">Maggi</label>
+        <br>
+        <input type="checkbox" name="dishes_check[]" id="chips_checkbox" value="chips">
+        <label for="chips_checkbox">Chips</label>
+        <br>
+        <input type="checkbox" name="dishes_check[]" id="kurkure_checkbox" value="kurkure">
+        <label for="kurkure_checkbox">Kurkure</label>
+        <br>
+
+
+        <br>
+        <br>
+
+        <button>Submit</button>
+        <button>Reset</button>
+
+        <br>
+        <br>
+
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="enter your message"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
